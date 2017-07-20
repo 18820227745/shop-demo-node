@@ -85,3 +85,6 @@
         - [部署到 Heroku](https://github.com/18820227745/shop-demo-node/blob/master/book/4.13%20%E9%83%A8%E7%BD%B2.md#4132-部署到-heroku)
         - [部署到 UCloud](https://github.com/18820227745/shop-demo-node/blob/master/book/4.13%20%E9%83%A8%E7%BD%B2.md#4133-部署到-ucloud)
 
+
+文档格式，知识点参考：[N-blog](https://github.com/nswbmw/N-blog/tree/master/book)
+代码参考：[汇智网](http://www.hubwiz.com/course/?type=Node.js)
