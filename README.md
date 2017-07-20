@@ -73,7 +73,7 @@
         - [添加购物车商品](https://github.com/18820227745/shop-demo-node/blob/master/book/4.10%20%E8%B4%AD%E7%89%A9%E8%BD%A6.md#4103-添加购物车商品)
         - [删除购物车商品](https://github.com/18820227745/shop-demo-node/blob/master/book/4.10%20%E8%B4%AD%E7%89%A9%E8%BD%A6.md#4104-删除购物车商品)
         - [结算](https://github.com/18820227745/shop-demo-node/blob/master/book/4.10%20%E8%B4%AD%E7%89%A9%E8%BD%A6.md#4105-结算)
-    - [日志](https://github.com/nswbmw/N-blog/blob/master/book/4.13%20%E6%97%A5%E5%BF%97.md)
+    - [日志](https://github.com/18820227745/shop-demo-node/blob/master/book/4.11%20%E6%97%A5%E5%BF%97.md)
         - [winston 和 express-winston](https://github.com/nswbmw/N-blog/blob/master/book/4.13%20%E6%97%A5%E5%BF%97.md#4131-winston-和-express-winston)
         - [.gitignore](https://github.com/nswbmw/N-blog/blob/master/book/4.13%20%E6%97%A5%E5%BF%97.md#4132-gitignore)
     - [测试](https://github.com/nswbmw/N-blog/blob/master/book/4.14%20%E6%B5%8B%E8%AF%95.md)
