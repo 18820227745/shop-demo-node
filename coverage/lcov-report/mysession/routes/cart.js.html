@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for mysession\routes\cart.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">mysession/routes/</a> cart.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">15.15% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>5/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">8.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">15.15% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+module.exports = function ( app ) {
+    //查看购物车商品
+    app.get('/cart', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >        var Cart = global.dbHelper.getModel('cart');</span>
+        //不适用中间件检查登录
+<span class="cstat-no" title="statement not covered" >        if(!req.session.user){</span>
+<span class="cstat-no" title="statement not covered" >            req.session.error = "用户已过期，请重新登录:"</span>
+<span class="cstat-no" title="statement not covered" >            res.redirect('/login');</span>
+        }else{
+            //查找对应用户，且商品状态为未付款状态
+<span class="cstat-no" title="statement not covered" >            Cart.find({"uId":req.session.user._id,"cStatus":false}, <span class="fstat-no" title="function not covered" >function (error, docs) {</span></span>
+<span class="cstat-no" title="statement not covered" >                res.render('cart',{carts:docs});</span>
+            });
+        }
+    });
+    //添加购物车商品
+    app.get("/addToCart/:id", <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+       //req.params.id 获取商品ID号
+<span class="cstat-no" title="statement not covered" >        if(!req.session.user){</span>
+<span class="cstat-no" title="statement not covered" >            req.session.error = "用户已过期，请重新登录:"</span>
+<span class="cstat-no" title="statement not covered" >            res.redirect('/login');</span>
+        }else{
+<span class="cstat-no" title="statement not covered" >            var Commodity = global.dbHelper.getModel('commodity'),</span>
+                Cart = global.dbHelper.getModel('cart');
+<span class="cstat-no" title="statement not covered" >            Cart.findOne({"uId":req.session.user._id, "cId":req.params.id},<span class="fstat-no" title="function not covered" >function(error,doc){</span></span>
+                //商品已存在 +1
+<span class="cstat-no" title="statement not covered" >                if(doc){</span>
+<span class="cstat-no" title="statement not covered" >                    Cart.update({"uId":req.session.user._id, "cId":req.params.id},{$set : { cQuantity : doc.cQuantity + 1 }},<span class="fstat-no" title="function not covered" >function(error,doc){</span></span>
+                        //成功返回1  失败返回0
+<span class="cstat-no" title="statement not covered" >                        if(doc &gt; 0){</span>
+<span class="cstat-no" title="statement not covered" >                            res.redirect('/home');</span>
+                        }
+                    });
+                //商品未存在，添加
+                }else{
+<span class="cstat-no" title="statement not covered" >                    Commodity.findOne({"_id": req.params.id}, <span class="fstat-no" title="function not covered" >function (error, doc) {</span></span>
+<span class="cstat-no" title="statement not covered" >                        if (doc) {</span>
+<span class="cstat-no" title="statement not covered" >                            Cart.create({</span>
+                                uId: req.session.user._id,
+                                cId: req.params.id,
+                                cName: doc.name,
+                                cPrice: doc.price,
+                                cImgSrc: doc.imgSrc,
+                                cQuantity : 1
+                            },<span class="fstat-no" title="function not covered" >function(error,doc){</span>
+<span class="cstat-no" title="statement not covered" >                                if(doc){</span>
+<span class="cstat-no" title="statement not covered" >                                    res.redirect('/home');</span>
+                                }
+                            });
+                        } else {
+&nbsp;
+                        }
+                    });
+                }
+            });
+        }
+    });
+&nbsp;
+    //删除购物车商品
+    app.get("/delFromCart/:id", <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+        //req.params.id 获取商品ID号
+<span class="cstat-no" title="statement not covered" >        var Cart = global.dbHelper.getModel('cart');</span>
+<span class="cstat-no" title="statement not covered" >        Cart.remove({"_id":req.params.id},<span class="fstat-no" title="function not covered" >function(error,doc){</span></span>
+            //成功返回1  失败返回0
+<span class="cstat-no" title="statement not covered" >            if(doc &gt; 0){</span>
+<span class="cstat-no" title="statement not covered" >                res.redirect('/cart');</span>
+            }
+        });
+    });
+&nbsp;
+    //购物车结算
+    app.post("/cart/clearing",<span class="fstat-no" title="function not covered" >function(req,res){</span>
+<span class="cstat-no" title="statement not covered" >        var Cart = global.dbHelper.getModel('cart');</span>
+<span class="cstat-no" title="statement not covered" >        Cart.update({"_id":req.body.cid},{$set : { cQuantity : req.body.cnum,cStatus:true }},<span class="fstat-no" title="function not covered" >function(error,doc){</span></span>
+            //更新成功返回1  失败返回0
+<span class="cstat-no" title="statement not covered" >            if(doc &gt; 0){</span>
+<span class="cstat-no" title="statement not covered" >                res.send(200);</span>
+            }
+        });
+    });
+&nbsp;
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jul 20 2017 09:17:38 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

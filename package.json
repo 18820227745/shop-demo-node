@@ -1,0 +1,29 @@
+{
+  "name": "e-commerce",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test":  "node --harmony ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
+  },
+  "dependencies": {
+    "body-parser": "~1.10.0",
+    "config-lite": "^2.0.0",
+    "connect-multiparty": "^2.0.0",
+    "ejs": "~0.8.5",
+    "express": "~3.4.8",
+    "express-formidable": "^1.0.0",
+    "express-session": "~1.9.3",
+    "express-winston": "^2.4.0",
+    "mongoose": "~3.8.1",
+    "multer": "^1.3.0",
+    "path": "~0.4.9",
+    "sha1": "^1.1.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0"
+  }
+}
