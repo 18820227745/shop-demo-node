@@ -1,6 +1,6 @@
-## N-blog
+## shop-demo-node
 
-使用 Express + MongoDB 搭建多人博客
+使用 Express + MongoDB 的小电商实战项目
 
 ## 开发环境
 
@@ -89,14 +89,3 @@
         - [部署到 Heroku](https://github.com/nswbmw/N-blog/blob/master/book/4.15%20%E9%83%A8%E7%BD%B2.md#4152-部署到-heroku)
         - [部署到 UCloud](https://github.com/nswbmw/N-blog/blob/master/book/4.15%20%E9%83%A8%E7%BD%B2.md#4153-部署到-ucloud)
 
-## GitBook
-
-[GitBook 在线阅读](https://maninboat.gitbooks.io/n-blog/content/)
-
-## 捐赠
-
-您的捐赠，是我持续开源的动力。
-
-支付宝 | 微信
-------|------
-![](./public/alipay.png) | ![](./public/wechat.jpeg)
